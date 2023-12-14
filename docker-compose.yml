@@ -9,5 +9,6 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf
     ports:
       - ${SERVER_PORT}:1935
+      - ${STAT_PORT}:80
     tty: true
     restart: always
